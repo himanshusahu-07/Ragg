@@ -1,15 +1,30 @@
 'use client';
 import * as React from 'react';
 import { Upload } from 'lucide-react';
+import { log } from 'console';
 
 const FileUploadComponent: React.FC = () => {
   const handleFileUploadUploadButtonClick =()=>{
     const el=document.createElement('input');
     el.setAttribute('type','file');
     el.setAttribute('accept','application/pdf');
-    el.addEventListener('change',(ev)=>{
+    el.addEventListener('change',async(ev)=>{
       if(el.files && el.files.length>0){
         const file=el.files[0];
+        if(file) {
+            const formData =new FormData();
+            formData.append('pdf',file);
+
+
+          await fetch ('http://localhost:8000/upload/pdf',{
+
+              method:'Post',
+              body:formData
+            })
+            console.log('File uploded');
+        }
+       
+
       }
     });
     el.click();

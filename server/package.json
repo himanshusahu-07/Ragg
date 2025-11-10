@@ -12,9 +12,11 @@
   "license": "ISC",
   "packageManager": "pnpm@10.15.1",
   "dependencies": {
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "multer": "^2.0.2"
   },
   "devDependencies": {
+    "@types/multer": "^2.0.0",
     "@types/node": "^24.9.1",
     "express": "4.x"
   }
