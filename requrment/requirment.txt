@@ -1,11 +1,1 @@
-{
-  "firedAt": "2025-09-08T18:33:08.444Z",
-  "event": "KEYLESS_ENV_DRIFT_DETECTED"
-}
 
-
-
-for uplode file in backend you use multer 35:39
-some server intallation 36:00 pa command pnpm @types/node
-
-multer install kkr ha ckeck out for what 
