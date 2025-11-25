@@ -9,3 +9,5 @@ for uplode file in backend you use multer 35:39
 some server intallation 36:00 pa command pnpm @types/node
 
 multer install kkr ha ckeck out for what 
+
+for Queue system we use BullMQ
